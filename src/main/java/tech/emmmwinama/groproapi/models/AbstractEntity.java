@@ -12,11 +12,6 @@ public class AbstractEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected Long id;
 
-//    @CreationTimestamp
-//    @Column(updatable = false)
-//    protected Instant created;
-
-
     public Long getId() {
         return id;
     }
