@@ -8,4 +8,6 @@ import tech.emmmwinama.groproapi.models.Crop;
 
 public interface CropRepository extends CrudRepository<Crop, Long> {
     Page<Crop> findByName(@Param("name") String name, Pageable pageable);
+
+    Page<Crop> findByNameAndCategory(@Param("name") String name, @Param("category") String category, Pageable pageable);
 }
