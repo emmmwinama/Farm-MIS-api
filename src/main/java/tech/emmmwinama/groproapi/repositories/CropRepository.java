@@ -4,4 +4,5 @@ import org.springframework.data.repository.CrudRepository;
 import tech.emmmwinama.groproapi.models.Crop;
 
 public interface CropRepository extends CrudRepository<Crop, Long> {
+    List<Crop> findByName(String name);
 }
